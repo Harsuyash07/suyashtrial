@@ -33,14 +33,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://http.cat/400",
+					"raw": "https://http.cat/500",
 					"protocol": "https",
 					"host": [
 						"http",
 						"cat"
 					],
 					"path": [
-						"400"
+						"500"
 					]
 				}
 			},
