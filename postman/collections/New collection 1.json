@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "bd6597b7-a16e-47ee-bbef-2843b6a0c2f5",
+		"name": "New collection 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23308221-bd6597b7-a16e-47ee-bbef-2843b6a0c2f5"
+	},
+	"item": [
+		{
+			"name": "New Request 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "baf11eb4-745b-428c-904b-a736d219cdcc",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ff8fb694-903a-400c-8b41-e1fd3b26ea73",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://http.cat/400",
+					"protocol": "https",
+					"host": [
+						"http",
+						"cat"
+					],
+					"path": [
+						"400"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "6340fc89-e242-4334-af47-4445b04fcd4f",
+			"key": "url",
+			"value": "postman-echo.com"
+		}
+	]
+}
